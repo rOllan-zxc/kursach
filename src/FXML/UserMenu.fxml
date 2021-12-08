@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserMenu">
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: #2A52BE; -fx-border-color: #000000;">
+         <children>
+            <Label layoutX="42.0" layoutY="8.0" prefHeight="25.0" prefWidth="167.0" text="Ваши личные данные">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="30.0" text="Имя  :" />
+            <Label layoutX="15.0" layoutY="50.0" text="Фамилия :" />
+            <Button fx:id="But_change" layoutX="6.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Изменить" />
+            <Label fx:id="LabelName" layoutX="48.0" layoutY="30.0" prefHeight="17.0" prefWidth="190.0" />
+            <Label fx:id="LabelSecondName" layoutX="77.0" layoutY="50.0" prefHeight="17.0" prefWidth="167.0" />
+            <Label fx:id="LabelPatr" layoutX="77.0" layoutY="70.0" prefHeight="15.0" prefWidth="167.0" />
+            <Label fx:id="LabelDate" layoutX="110.0" layoutY="90.0" prefHeight="17.0" prefWidth="134.0" />
+            <Label fx:id="LabelPhone" layoutX="120.0" layoutY="110.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label fx:id="LabelPas_info" layoutX="140.0" layoutY="130.0" prefHeight="17.0" prefWidth="105.0" />
+            <Label fx:id="LabelLogin" layoutX="57.0" layoutY="150.0" prefHeight="17.0" prefWidth="190.0" />
+            <Label fx:id="LabelPass" layoutX="77.0" layoutY="170.0" prefHeight="17.0" prefWidth="167.0" />
+            <Label fx:id="LabelStatus" layoutX="57.0" layoutY="190.0" prefHeight="17.0" prefWidth="190.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="250.0" prefHeight="250.0" prefWidth="250.0" style="-fx-border-color: #000000;">
+         <children>
+            <Button fx:id="But_exit" layoutX="60.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Выход" />
+            <Button fx:id="But_infoCompany" layoutX="60.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Ифо о компании" />
+            <Button fx:id="But_infoDepart" layoutX="60.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Инфо об отделах" />
+            <Button fx:id="But_GetSalery" layoutX="60.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Получить зп" />
+            <Button fx:id="History_salary" layoutX="60.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="История зп" />
+            <Button fx:id="But_writeHistory" layoutX="60.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Печать истории" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="15.0" layoutY="70.0" text="Отчество :" />
+      <Label layoutX="15.0" layoutY="90.0" text="Дата рождения :" />
+      <Label layoutX="15.0" layoutY="110.0" text="Номер телефона :" />
+      <Label layoutX="15.0" layoutY="130.0" text="Паспротрный номер :" />
+      <Label layoutX="15.0" layoutY="150.0" text="Login :" />
+      <Label layoutX="15.0" layoutY="170.0" text="Password :" />
+      <Label layoutX="15.0" layoutY="190.0" text="Status :" />
+   </children>
+</AnchorPane>

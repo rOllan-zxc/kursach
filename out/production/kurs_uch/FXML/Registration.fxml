@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Registration">
+   <children>
+      <TextField fx:id="TextName" layoutX="15.0" layoutY="80.0" prefWidth="150.0" promptText="Имя" style="-fx-background-radius: 10;" />
+      <TextField fx:id="TextSecondName" layoutX="15.0" layoutY="110.0" prefWidth="150.0" promptText="Фамилия" style="-fx-background-radius: 10;" />
+      <TextField fx:id="TextPatr" layoutX="15.0" layoutY="140.0" prefWidth="150.0" promptText="Отчество" style="-fx-background-radius: 10;" />
+      <TextField fx:id="TextPhone" layoutX="175.0" layoutY="80.0" prefWidth="150.0" promptText="Номер телефона" style="-fx-background-radius: 10;" />
+      <TextField fx:id="TextPas_info" layoutX="175.0" layoutY="110.0" prefWidth="150.0" promptText="Паспортный номер" style="-fx-background-radius: 10;" />
+      <DatePicker fx:id="TextDate" layoutX="175.0" layoutY="140.0" prefWidth="150.0" promptText="Дата рождения" />
+      <TextField fx:id="TextLog" layoutX="335.0" layoutY="80.0" prefWidth="150.0" promptText="Login" style="-fx-background-radius: 10;" />
+      <TextField fx:id="TextPas" layoutX="335.0" layoutY="110.0" prefWidth="150.0" promptText="Passwrod" style="-fx-background-radius: 10;" />
+<!--      <TextField fx:id="TextStatus" layoutX="335.0" layoutY="140.0" prefWidth="150.0" promptText="Status" style="-fx-background-radius: 10;" />-->
+      <Button fx:id="ButRegistration" layoutX="15.0" layoutY="182.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 10;" text="Регистрация" />
+      <Button fx:id="But_exit" layoutX="415.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-radius: 10;" text="Выход" />
+      <AnchorPane prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #2A52BE;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="17.0" prefHeight="17.0" prefWidth="150.0" text="Регистрация">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="LabelAnswer" layoutX="31.0" layoutY="229.0" prefHeight="50.0" prefWidth="296.0" textFill="#06fc1e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Table_Users">
+   <children>
+      <TableView fx:id="Table" prefHeight="200.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="ColumId" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="ColumName" prefWidth="86.0" text="Имя" />
+            <TableColumn fx:id="ColumSecondName" prefWidth="75.0" text="Фамилия" />
+            <TableColumn fx:id="ColumPatr" prefWidth="72.0" text="Отчество" />
+            <TableColumn fx:id="ColumnDate" prefWidth="79.0" text="Дата рож" />
+            <TableColumn fx:id="ColumTel" prefWidth="90.0" text="Телефон" />
+            <TableColumn fx:id="ColumPas_info" prefWidth="75.0" text="Паспорт" />
+            <TableColumn fx:id="ColumLog" prefWidth="75.0" text="Login" />
+            <TableColumn fx:id="ColumPass" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="ColumStatus" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Сделать администратором" />
+            <ChoiceBox fx:id="Choice" layoutX="13.0" layoutY="41.0" prefWidth="150.0" />
+            <Button fx:id="But_admin" layoutX="14.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Сделать админом" />
+            <Button fx:id="But_UnAdmin" layoutX="13.0" layoutY="123.0" mnemonicParsing="false" text="Забрать права админа" />
+            <Label fx:id="LabelAdminka" layoutX="13.0" layoutY="162.0" prefHeight="25.0" prefWidth="148.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+         <children>
+            <RadioButton fx:id="Radio_User" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" text="Только пользователи" />
+            <RadioButton fx:id="Radio_admin" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" text="Только Администраторы" />
+            <RadioButton fx:id="Radio_All" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" text="Все" />
+            <Button fx:id="But_Update" layoutX="28.0" layoutY="138.0" mnemonicParsing="false" text="Обновить" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="400.0" layoutY="200.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #2A52BE;">
+         <children>
+            <Label fx:id="LabelError" layoutX="14.0" layoutY="61.0" prefHeight="93.0" prefWidth="331.0" textFill="#ff0101">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

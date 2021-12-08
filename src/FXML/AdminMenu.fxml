@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminMenu">
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="250.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label layoutX="14.0" layoutY="123.0" text="Паспортный номер :" />
+            <Label layoutX="14.0" layoutY="43.0" text="Фамилия :" />
+            <Label layoutX="14.0" layoutY="63.0" text="Отчество : " />
+            <Label layoutX="14.0" layoutY="83.0" text="Дата рождения :" />
+            <Label layoutX="14.0" layoutY="103.0" text="Номер телефона :" />
+            <Label layoutX="14.0" layoutY="23.0" text="Имя :" />
+            <Label layoutX="14.0" layoutY="143.0" text="Login :" />
+            <Label layoutX="14.0" layoutY="163.0" text="Password :" />
+            <Label layoutX="14.0" layoutY="183.0" text="Статус :" />
+            <Label layoutX="38.0" layoutY="4.0" text="Ваши личные данные">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="But_change" layoutX="64.0" layoutY="211.0" mnemonicParsing="false" text="Редактировать" />
+            <Label fx:id="LabelName" layoutX="46.0" layoutY="23.0" prefHeight="17.0" prefWidth="200.0" />
+            <Label fx:id="LabelSecondName" layoutX="75.0" layoutY="43.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LabelPatr" layoutX="75.0" layoutY="63.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LabelDate" layoutX="111.0" layoutY="83.0" prefHeight="17.0" prefWidth="131.0" />
+            <Label fx:id="LabelPhone" layoutX="114.0" layoutY="103.0" prefHeight="17.0" prefWidth="131.0" />
+            <Label fx:id="LabelPas_info" layoutX="132.0" layoutY="123.0" prefHeight="17.0" prefWidth="110.0" />
+            <Label fx:id="LabelLogin" layoutX="56.0" layoutY="143.0" prefHeight="17.0" prefWidth="187.0" />
+            <Label fx:id="LabelPassword" layoutX="75.0" layoutY="163.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LabelStatus" layoutX="57.0" layoutY="183.0" prefHeight="17.0" prefWidth="187.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="250.0" prefHeight="330.0" prefWidth="250.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label layoutX="14.0" layoutY="123.0" text="Паспортный номер :" />
+            <Label layoutX="14.0" layoutY="43.0" text="Фамилия :" />
+            <Label layoutX="14.0" layoutY="63.0" text="Отчество : " />
+            <Label layoutX="14.0" layoutY="83.0" text="Дата рождения :" />
+            <Label layoutX="14.0" layoutY="103.0" text="Номер телефона :" />
+            <Label layoutX="14.0" layoutY="23.0" text="Имя :" />
+            <Label layoutX="14.0" layoutY="143.0" text="Login :" />
+            <Label layoutX="14.0" layoutY="163.0" text="Password :" />
+            <Label layoutX="14.0" layoutY="183.0" text="Статус :" />
+            <Label layoutX="48.0" layoutY="4.0" text="Поиск пользователя">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="findlog" layoutX="16.0" layoutY="207.0" prefHeight="25.0" prefWidth="110.0" promptText="Login" />
+            <TextField fx:id="findphone" layoutX="16.0" layoutY="246.0" prefWidth="110.0" promptText="Номер телефона" />
+            <Button fx:id="But_find" layoutX="13.0" layoutY="282.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Найти" />
+            <Label fx:id="LabelFindLogin" layoutX="134.0" layoutY="211.0" prefHeight="17.0" prefWidth="110.0" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelFindTel" layoutX="134.0" layoutY="249.0" prefHeight="17.0" prefWidth="110.0" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelFindName" layoutX="46.0" layoutY="23.0" prefHeight="17.0" prefWidth="200.0" />
+            <Label fx:id="LabelFindSecondName" layoutX="75.0" layoutY="43.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LabelFindPatr" layoutX="75.0" layoutY="63.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LabelFindDate" layoutX="111.0" layoutY="83.0" prefHeight="17.0" prefWidth="131.0" />
+            <Label fx:id="LabelFindPhone" layoutX="114.0" layoutY="103.0" prefHeight="17.0" prefWidth="131.0" />
+            <Label fx:id="LabelFindPas_info" layoutX="132.0" layoutY="123.0" prefHeight="17.0" prefWidth="114.0" />
+            <Label fx:id="LabelFindLog" layoutX="56.0" layoutY="143.0" prefHeight="17.0" prefWidth="187.0" />
+            <Label fx:id="LabelFindPass" layoutX="75.0" layoutY="163.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LabelFindStatus" layoutX="57.0" layoutY="183.0" prefHeight="17.0" prefWidth="187.0" />
+            <Label fx:id="ErrorFind" layoutX="91.0" layoutY="286.0" prefHeight="35.0" prefWidth="158.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="But_infoDepartment" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Таблица отделов" />
+      <Button fx:id="But_infoUser" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Список пользователей" />
+      <Button fx:id="But_statistic" layoutX="10.0" layoutY="320.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Статистика" />
+      <Button fx:id="But_replanis" layoutX="10.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Пополнения бюджета" />
+      <Button fx:id="But_getSalary" layoutX="10.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Выдать зарплату" />
+      <Button fx:id="But_infoCompany" layoutX="10.0" layoutY="410.0" mnemonicParsing="false" text="Информация о компании" />
+      <Button fx:id="But_exit" layoutX="434.0" layoutY="410.0" mnemonicParsing="false" text="выход" />
+      <Button fx:id="But_addDepartmen" layoutX="178.0" layoutY="410.0" mnemonicParsing="false" text="Добавить отдел" />
+      <Button fx:id="But_Doc" layoutX="178.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Отчет" />
+      <Button fx:id="But_Pay_departamnet" layoutX="178.0" layoutY="350.0" mnemonicParsing="false" text="Перевод отделу" />
+      <Button fx:id="But_reg" layoutX="290.0" layoutY="350.0" mnemonicParsing="false" text="Регистрация компании" />
+   </children>
+</AnchorPane>

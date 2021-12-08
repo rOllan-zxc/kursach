@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.reg">
+   <children>
+      <TextField fx:id="name" layoutX="14.0" layoutY="60.0" promptText="Название компании" />
+      <Button fx:id="But_go" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" text="Готово" />
+   </children>
+</AnchorPane>
